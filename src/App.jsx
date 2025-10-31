@@ -1,12 +1,13 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./componentes/NavBar";
+import ItemListContainer from "./componentes/ItemListContainer";
 
 function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting="¡Bienvenido a El Camino de las Bodegas!" />
+      <ItemListContainer bienvenida="¡Bienvenido a El Camino de las Bodegas!" />
+      <ItemListContainer subtitulo="Explorá nuestras bodegas y descubrí nuevos vinos 🍷" />
     </>
   );
 }

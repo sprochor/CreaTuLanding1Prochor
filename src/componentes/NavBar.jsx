@@ -1,12 +1,22 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import CartWidget from "./CartWidget";
+import logo from '../assets/Logo Bodegas.png';
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand href="#">🍷 El Camino de las Bodegas</Navbar.Brand>
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Container fluid>
+        <Navbar.Brand href="#">
+          <img
+            src={logo} 
+            width="35" 
+            height="35"
+            className="d-inline-block align-top me-3" 
+            alt="Logo El Camino de las Bodegas"
+          />
+          El Camino de las Bodegas
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
