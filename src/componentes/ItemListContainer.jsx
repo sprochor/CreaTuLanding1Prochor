@@ -1,24 +1,15 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import './ItemListContainer.css'
 
 const ItemListContainer = ({ bienvenida, subtitulo }) => {
   return (
-    <Container fluid
-      className="text-center"
-      style={{
-        marginTop: "100px",
-        display: "block",        
-        position: "relative",    
-      }}
-    >
+    <Container fluid>
       <h1
-        className="color-vino fw-bold mb-3"
-        style={{ marginTop: "0", paddingTop: "0" }}
+        className="text-center fw-bold color-vino"
       >
         {bienvenida}
       </h1>
-      <p className="text-muted m-0 ">
+      <p className="text-center">
         {subtitulo}
       </p>
     </Container>
